@@ -1,0 +1,67 @@
+{
+"recommendationsReceived": {
+"_total": 6,
+"values": [
+{
+"recommendationText": "Apoorva is very creative and passionate about what she likes. She can be very focused and diligent in her work. She is very good in web technologies like, html, css, jquery, etc. I has always been a pleasure to work with her.",
+"recommender": {
+"firstName": "Arya",
+"headline": "Student, XLRI Jamshedpur",
+"id": "qoo6ZucJJp",
+"lastName": "Roychowdhury",
+"pictureUrl": "https://media.licdn.com/mpr/mprx/0_CHQ4YJD6mPqsLs6Dho9wYsaemzFzdJ9DhEtbYUO4l91L9g3SaanqrRE98gboEOc3_Ik6lpuQG9z_"
+}
+},
+{
+"recommendationText": "Apoorva is a proactive contributor to the team with excellent technical skills,an avid learner as well as great listener who would make a great addition to any team. Throughout the intern-ship, she completed her assignments on time and never failed to add a creative touch when appropriate. I would highly recommend her for any position, as she naturally rises to the occasion when presented with something she is passionate about.",
+"recommender": {
+"firstName": "Shashikant",
+"headline": "Senior Software Engineer at Mastek Ltd",
+"id": "jtFYQ33fzs",
+"lastName": "Singh",
+"pictureUrl": "https://media.licdn.com/mpr/mprx/0_P7F2AvpvYqRY61EYrwlSsXMvOqqGhtQ-pOx2qTUvO5v_5CRf9wjSsXnvgX9_5C5OJOj3xTMzB_Ri_nV_MpGrJTqJ-_RC_nxGVpGf-83qJCaaW8kYnSNTtqfLt93tonH1PxQhvtINvSV"
+}
+},
+{
+"recommendationText": "Apoorva is a very innovative, enthusiastic and a smart worker. I have had learnt a lot from her when it comes to designing UI/UX for the Android App. Overall she is a very cool, calm and composed colleague to work with.",
+"recommender": {
+"firstName": "Deepank",
+"headline": "Product Manager at 1mg (previously HealthKartPlus)",
+"id": "d8bkCbpG-t",
+"lastName": "Rastogi",
+"pictureUrl": "https://media.licdn.com/mpr/mprx/0_bNwbMoi76LSztwp7L-eqMePjQ5WNYw27L9x4MWljM8gkTfRfItUwcdL1eIdwjuD_QBWMnaixzwV5"
+}
+},
+{
+"recommendationText": "\r\nApoorva is a keen learner and extremely talented person. She is an excellent mentor and very nice to her juniors. I got an awesome opportunity to work under her as an intern and try out new things which helped me pushing my boundaries. I wish her success for all her future endeavors.",
+"recommender": {
+"firstName": "Sanyam",
+"headline": "Seeking full time job opportunities",
+"id": "x7NK-59VDW",
+"lastName": "Khurana",
+"pictureUrl": "https://media.licdn.com/mpr/mprx/0_Wn8k22v0hZuQPJ85WPPU27qYCUJQAJ35wqNR2mnSgYDBag9LLKKeCaG_uzMZtOhWevCsidHXDiqW"
+}
+},
+{
+"recommendationText": "Apoorva is a very hard working person. She is a thorough professional when it comes to meeting expectations. She also has very good communication skills. I wish her all the best for all future endeavours and she would definately prove to be an asset to any organization and team where she works in.",
+"recommender": {
+"firstName": "Deepak",
+"headline": "Senior Technical Associate at Sears Holdings India",
+"id": "vgpjQMht2C",
+"lastName": "Shakya",
+"pictureUrl": "https://media.licdn.com/mpr/mprx/0_HiYZ1HdhHnYHUf9YE3xw1wJrerDWBuBYETEF1wI8BzJZeH8OkLmNgIxmQYSBqwntdhyQp2vRvt6u"
+}
+},
+{
+"recommendationText": "It was a pleasure to work together with Apoorva, who was a hardworking Intern. She is not only a wise and responsible employee but also an inspiring professional. Has a lot of analytical, programmatical capability and willingness for her both personal & professional development. Always takes care of the job, works hard and really enjoys team-working. Motivated perfectionist with very good communication skills. Very positive attitude towards work. I strongly endorse Apoorva!",
+"recommender": {
+"firstName": "Kailas",
+"headline": "Senior Web UI developer.",
+"id": "Kn7hCoOT83",
+"lastName": "Gayakwad",
+"pictureUrl": "https://media.licdn.com/mpr/mprx/0_PDVbcGzsS-giGUWa0DCdpvqs2XSCGokCPdudlBJsD-diGskf1dGWJrBsW96lXVXGPRubMTZVCvb_TmaCVY0U09z9FvbGTmhaxY0kqchR2NtmwZRt1fWoN_aobhg-HmB09jUwP5zzUBU"
+}
+}
+]
+}
+}
