@@ -116,6 +116,7 @@ h1::before {
 
 .main-content{
   padding-top:20px; 
+  margin-bottom: 50px;
 }
 
 .btn:hover{
@@ -304,12 +305,15 @@ ul.summary-box::after {
   position: relative;
   margin-bottom: 5px;
   padding-top: 5px;
-  padding-left: 50px;
+  padding-left: 60px;
 }
+
 .refferal img.pic {
-  left: 3px;
-  position: absolute;
-  width: 45px;
+    left: 0;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    width: 45px;
 }
 .recomends-content p.content {
     padding: 10px;
