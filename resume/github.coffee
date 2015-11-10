@@ -113,7 +113,6 @@ fillskills = ->
     ul.appendChild li
 
 setWidth=(el,width) ->
-  console.log el  + width
   setTimeout ->
     el.style.width = width + '%'
   ,1000
@@ -123,7 +122,6 @@ getRec =->
   xhttp.onreadystatechange = ->
     if xhttp.readyState is 4 and xhttp.status is 200
       data = JSON.parse(xhttp.responseText)
-      console.log data
       src = get('#recTemplate')
       tar = get('#recontent')
 
