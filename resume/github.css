@@ -4,6 +4,7 @@
 .icon.facebook-icon:before{content:"\f09a";}
 .icon.twitter-icon:before{content:"\f099";}
 .icon.stackoverflow-icon:before{content:"\f16c";}
+.icon.bitbucket-icon:before{content:"\f171";}
 .icon.linkedin-icon:before{content:"\f0e1";}
 .icon.pintrest-icon:before{content:"\f0d2";}
 .gicon.book-icon:before{content:"\f001";}
@@ -31,12 +32,13 @@ body {
 
 ul, ol {margin: 0; padding:0;}
 p {margin: 0;}
-
+.left{float: left;}
+.right{float: right;}
 .center{ margin-left: auto; margin-right: auto;}
 .block{display: block}
 ul{ margin: 0; padding: 0; list-style-type: none;}
 ul li a{ color: inherit; display: block;}
-a{color: inherit;text-decoration: none;cursor: pointer; transition:0.5s all;}
+a{color: inherit;text-decoration: none;cursor: pointer; transition:0.2s all;}
 a:hover{color: #000;}
 .sub-brown{color: #aaa;}
 .sub-brown-dark{color: #767676;}
@@ -92,10 +94,11 @@ section, .contentsection::after {
   border-bottom: 1px solid #e5e5e5;
 }
 .header a {
-    font-size: 1.3em;
+    font-size: 1.1em;
     opacity: 0.6;
+    display: inline-block;
 }
-.header a:hover{ opacity:1;}
+.header a:hover{ opacity:1;transform: scale(1.5);}
 .blue{color: #4078c0;}
 
 

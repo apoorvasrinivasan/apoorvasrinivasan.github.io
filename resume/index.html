@@ -3,23 +3,28 @@
 @font-face{font-family:Icons;src:url(fonts/icons.eot);src:url(fonts/icons.eot?#iefix) format('embedded-opentype'),url(fonts/icons.woff2) format('woff2'),url(fonts/icons.woff) format('woff'),url(fonts/icons.ttf) format('truetype'),url(fonts/icons.svg#icons) format('svg');font-style:normal;font-weight:400;font-variant:normal;text-decoration:inherit;text-transform:none}
 @font-face{font-family:'octicons';src:url("fonts/octicons.eot") format("embedded-opentype"),url("fonts/octicons.woff") format("woff"),url("fonts/octicons.ttf") format("truetype"),url("fonts/octicons.svg") format("svg");font-weight:normal;font-style:normal}.octicon,.mega-octicon{font:normal normal normal 16px/1 octicons;display:inline-block;text-decoration:none;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="github.css" />
+<link rel="stylesheet" type="text/css" href="githubprint.css" media="print" />
 <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
 
 </head>
 <section class="header">
   <div class="contentsection spread">
     <a class="icon github-icon" target='_blank' href='https://github.com/apoorvasrinivasan'></a>
-    <a class="icon stackoverflow-icon" target='_blank' href=''></a>
+    <a class="icon bitbucket-icon" target='_blank' href='https://bitbucket.org/apoorva/'></a>
     <a class="icon linkedin-icon" target='_blank' href='https://in.linkedin.com/pub/apoorva-srinivasan/53/336/317'></a>
     <a class="icon facebook-icon" target='_blank' href='https://www.facebook.com/apoorva.srinivasan1'></a>
     <a class="icon twitter-icon" target='_blank' href='https://twitter.com/ApoorvaShrini'></a> 
+    <a class="icon stackoverflow-icon" target='_blank' href=''></a>
     <a class="icon pintrest-icon" target='_blank' href='https://www.pinterest.com/ascoolasapoorva/'></a>
   </div>
 </section>
 <section id='headerSection' class='hr'>
   <div class="contentsection ">
-    <h1 class="gicon book-icon">apoorva srinivasan</h1>
+    <h1 class="gicon book-icon left">apoorva srinivasan</h1>
+    <div class="btn right" onclick='window.print()'>Print</div>
+    <div class="btn right">Download</div>
   </div>
 </section>
 <section class="contentsection main-content ">
@@ -39,11 +44,40 @@
   </ul>
 </div>
 <div id = "workex" class="tab-items">
+  <div class="heading print">Workex </div>
   <ul class = 'projects'>
     <li>
       <span class='commits sub-brown'>2015 - Zopper</span>
       <div class="project-details">
-        <div class="title blue">Zopper Website <div class="more"></div></div>
+        <div class="title ">Zimply Website<div class="more"></div></div>
+        <div class="subtitle sub-brown-dark">
+          <span class='frontend stack-tags'>Frontend</span>
+          <span class='stack-tags'>HTML/CSS</span>
+          <span class='stack-tags'>Responsive</span>
+          <span class='stack-tags'>Jquery</span>
+        </div>
+        <p class="description">
+          Zimply Website <br/>
+          Shop , Cart and payment integration, <br/>
+          Responsive for all device types.<br/>
+        </p>
+      </div>
+      <div class="project-details">
+        <div class="title">Internal Dashboard <div class="more"></div></div>
+        <div class="subtitle">
+          <span class='frontend stack-tags'>Frontend</span>
+          <span class='stack-tags'>Semantic UI</span>
+          <span class='stack-tags'>Ember JS</span>
+        </div>
+        <p class="description">
+          Internal dashboard for Courier system<br/>
+        </p>
+      </div>
+    </li>
+    <li>
+      <span class='commits sub-brown sub-brown'>2015 - Zopper</span>
+      <div class="project-details">
+        <div class="title ">Zopper Website <div class="more"></div></div>
         <div class="subtitle sub-brown-dark">
           <span class='frontend stack-tags'>Frontend</span>
           <span class='stack-tags'>HTML/CSS</span>
@@ -75,7 +109,7 @@
       </div>
     </li>
     <li>
-      <span class='commits'>2014 -Zopper:</span>
+      <span class='commits sub-brown'>2014 -Zopper:</span>
       <div class="project-details">
         <div class="title">Mobile Site <div class="more"></div></div>
         <div class="subtitle">
@@ -105,7 +139,7 @@
       </div>
     </li>
     <li>
-      <span class='commits'>2013 -Reviews42(Zopper):</span>
+      <span class='commits sub-brown'>2013 -Reviews42(Zopper):</span>
       <div class="project-details">
         <div class="title">RISE <div class="more"></div></div>
         <div class="subtitle">
@@ -137,7 +171,7 @@
       </div>
     </li>  
     <li>
-      <span class='commits'>Personal Projects</span>
+      <span class='commits sub-brown'>Personal Projects</span>
       <div class="project-details">
         <div class="title">Nachrict (BSNL)<div class="more"></div></div>
         <div class="subtitle">
@@ -196,167 +230,4 @@
         <p class="content sub-brown-dark"></p>
     </li>
  </div>   
-<script type="text/javascript">
-  setTabs()
-  fillSkills();
-  getRec();
-  function show(els){
-    if (els.length){
-      for(var i =0; i< els.length;i++){
-        els[i].style.display = 'block';
-      }
-    }
-    else{
-      els.style.display = 'block';
-    }
-  }
-  function hide(els){
-    if (els.length){
-      for(var i =0; i< els.length;i++){
-        els[i].style.display = 'none';
-      }
-    }
-    else{
-      els.style.display = 'none';
-    }
-  }
-  function setTabs(){
-    var tabs = document.getElementsByClassName('tabs')[0];
-    var menuitems= tabs.getElementsByTagName('li');
-    var hash = location.hash.substr(1) || menuitems[0].getAttribute('href');
-    for(var i =0; i<  menuitems.length;i++){
-      var ii = menuitems[i];
-      if(ii.getAttribute('href') == hash){
-        ii.classList.add('active');
-      }
-      else
-        ii.classList.remove('active');
-    }
-    hide(document.getElementsByClassName('tab-items'));
-    var activeTab = document.getElementById(hash);
-    show(activeTab);
-  }
-  var tabs = document.getElementsByClassName('tabs')[0];
-  var menuitems= tabs.getElementsByTagName('li');
-  for(var i = 0;i<menuitems.length;i++){
-      var ii = menuitems[i];
-     ii.addEventListener('click',function(){
-        location.hash = this.getAttribute('href');
-        setTabs();
-      })
-  }
-  var more = document.getElementsByClassName('more');
-  for(var i =0;i<more.length;i++){
-    // more[i].innerHTML = '&09a;';
-    more[i].addEventListener('click',function(){
-      var p = this.parentNode.nextElementSibling.nextElementSibling;
-      if(p.style.display == 'block')
-        p.style.display = 'none';
-      else
-        p.style.display = 'block';
-    })
-  }
-  function fillSkills(){
-    //later get from linkedin
-    var SKILLS = [
-      {
-        skill:'HTML',
-        value:9,
-        stack:'frontend'
-      },
-      {
-        skill:'Angular JS',
-        value:5,
-        stack:'frontend'
-      },
-    {
-        skill:'CSS',
-        value:9,
-        stack:'frontend'
-      },
-    {
-        skill:'Javascript',
-        value:8,
-        stack:'frontend'
-      },
-    {
-        skill:'JQuery',
-        value:8,
-        stack:'frontend'
-      },
-    {
-        skill:' tornado',
-        value:5,
-        stack:'backend'
-      },
-    {
-        skill:'flask',
-        value:5,
-        stack:'backend'
-      },
-    {
-        skill:'Django',
-        value:8.5,
-        stack:'backend'
-      },
-      {
-        skill:'Python',
-        value:9,
-        stack:'backend'
-      },
-      {
-        skill:'GIT',
-        value:9,
-        stack:'others'
-      },
-      {
-        skill:'nginx',
-        value:3,
-        stack:'others'
-      },
-      {
-        skill:'Linux',
-        value:3,
-        stack:'others'
-      },
-    ]
-    var ul = document.getElementById('skillSet');
-    function setWidth(el, width){
-      setTimeout(function(){el.style.width = width + '%';},1000)
-    }
-    SKILLS.forEach(function(skill){
-      li = document.createElement('li');
-      li.setAttribute('data-content',skill.skill);
-
-      span = document.createElement('span');
-      span.classList.add('graph');
-      span.classList.add(skill.stack);
-      li.appendChild(span);
-      setWidth(span,skill.value*10);
-      
-      ul.appendChild(li);
-    })
-  }
-function getRec(){
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange=function() {
-    if (xhttp.readyState == 4 && xhttp.status == 200) {
-      var data = JSON.parse(xhttp.responseText);
-      console.log(data);
-      var src = document.getElementById('recTemplate');
-      var tar = document.getElementById('recontent');
-
-      data.recommendationsReceived.values.forEach(function(recs){ 
-        var li = src.children[0].cloneNode(true);
-        li.getElementsByClassName('name')[0].innerHTML = recs.recommender.firstName + recs.recommender.lastName 
-        li.getElementsByClassName('title')[0].innerHTML = recs.recommender.headline;
-        li.getElementsByClassName('content')[0].innerHTML = recs.recommendationText;
-        li.getElementsByClassName('pic')[0].src = recs.recommender.pictureUrl;
-        tar.appendChild(li);
-      })
-    }
-  }
-  xhttp.open("GET", "rec.json", true);
-  xhttp.send();
-}
-</script>
+<script type="text/javascript" src='github.js'></script>
