@@ -80,8 +80,8 @@
     more = ref[k];
     more.addEventListener('click', function() {
       var p;
-      p = this.parentNode.nextElementsibling.nextElementsibling;
-      p.style.display = p.style.display === 'block' ? 'hide' : 'block';
+      p = this.parentNode.nextElementSibling.nextElementSibling;
+      p.style.display = p.style.display === 'block' ? 'none' : 'block';
       return true;
     });
   }

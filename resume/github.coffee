@@ -35,8 +35,8 @@ for item in menuitems
     setTabs()
 for more in  get('.more')
   more.addEventListener 'click', ->
-    p = this.parentNode.nextElementsibling.nextElementsibling
-    p.style.display = if p.style.display is 'block' then 'hide' else  'block'   
+    p = this.parentNode.nextElementSibling.nextElementSibling
+    p.style.display = if p.style.display is 'block' then 'none' else  'block'   
     true
 fillskills = ->
   SKILLS = [
