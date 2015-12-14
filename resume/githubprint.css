@@ -53,11 +53,13 @@
   }
   .skill-set-graph, .skill-set-graph li{
     border: none;
+    box-shadow: none;
   }
   #education{display: none !important;}
 #skillSet > li {
     border-bottom: 0 none;
     display: inline-block;
+    height: 17px;
     margin: 1% 2%;
     padding: 0;
     position: relative;
@@ -66,6 +68,7 @@
 #skillSet > li::before {
     /*box-shadow: 0 0 0 1px #ccc;*/
     left: 0;
+    text-transform: capitalize;
     padding: 4px 0;
     position: absolute;
     top: 0;
@@ -82,4 +85,4 @@
     position: relative;
     
 }
-}
+#recommendation{display: none;}
