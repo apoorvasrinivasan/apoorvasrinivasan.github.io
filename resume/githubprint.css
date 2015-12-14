@@ -55,4 +55,31 @@
     border: none;
   }
   #education{display: none !important;}
+#skillSet > li {
+    border-bottom: 0 none;
+    display: inline-block;
+    margin: 1% 2%;
+    padding: 0;
+    position: relative;
+    width: 68px;
+}
+#skillSet > li::before {
+    /*box-shadow: 0 0 0 1px #ccc;*/
+    left: 0;
+    padding: 4px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.graph {
+    bottom:-22px;
+    display: block;
+    height: 2px;
+    left: 0;
+    margin: 0;
+    /*opacity: 0.3;*/
+    transition:none;
+    position: relative;
+    
+}
 }
