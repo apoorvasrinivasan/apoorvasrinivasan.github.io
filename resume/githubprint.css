@@ -85,4 +85,4 @@
     position: relative;
     
 }
-#recommendation{display: none;}
+#recommendation .recomends-content{display: none;}
