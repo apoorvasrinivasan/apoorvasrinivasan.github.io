@@ -1,0 +1,176 @@
+[
+  {
+    "company": "<i>September 2015</i>  Zimply ",
+    "projects": [
+      {
+        "description": "Zimply Website\n Shop , Cart and payment integration,\n Responsive for all device types.<br/>",
+        "name": "Zimply Website",
+        "skills": [
+          "frontend: Front-end",
+          "HTML/CSS"
+        ]
+      },
+      {
+        "description": "Internal dashboard for Courier system",
+        "name": "Internal Dashboard",
+        "skills": [
+          "frontend: Front-end",
+          "Semantic UI",
+          "Ember JS"
+        ]
+      },
+      {
+        "name": "Seller Dashboard",
+        "skills": [
+          "frontend: Front-end",
+          "Knockout JS",
+          "Semantic UI"
+        ]
+      }
+    ]
+  },
+  {
+    "company": "<i>Jan 2013- Aug 2015</i> Zopper  ",
+    "projects": [
+      {
+        "description": "Main zopper.com website. <br/>Responsive for all device types.<br/>Pingdom score: 90+<br/>Team size: 2+",
+        "name": "Zopper Website ",
+        "skills": [
+          "frontend: Front-end",
+          "HTML/CSS",
+          "Responsive",
+          "JQuery",
+          "other:Team management"
+        ]
+      },
+      {
+        "description": "Internal dashboard for managing supply chain system<br/>\n          Responsive for all device types.<br/>\n          Team size: 3+",
+        "name": "Unified Dashboard ",
+        "skills": [
+          "frontend: Front-end",
+          "Semantic UI",
+          "Responsive",
+          "Angular JS"
+        ]
+      },
+      {
+        "name": "Rocket- Inventory Dashboard",
+        "skills": [
+          "frontend: Front-end",
+          "Angular JS",
+          "Semantic UI"
+        ]
+      },
+      {
+        "description": "Single-Handedly responsible for the entire mobile site.<br/>\n          Consuming external APIs using Tornado.\n          Revamping the website",
+        "name": "Mobile Site ",
+        "skills": [
+          "frontend: Front-end",
+          "HTML CSS",
+          "Jquery",
+          "Jinja/ Jinja2",
+          "backend",
+          "tornado",
+          "other:ansible"
+        ]
+      },
+      {
+        "description": "Consuming elastic APIs to provide interface for healthy competition between online markets.",
+        "name": "Profit",
+        "skills": [
+          "frontend: Front-end",
+          "Bootstap",
+          "Angular JS"
+        ]
+      },
+      {
+        "description": "Portal for the retails <br/>Syncing with the main website<br/>Itegration with OLX/Quickr knowlarity.",
+        "name": "RISE",
+        "skills": [
+          "backend:Backend",
+          "Python /Django",
+          "Javascript/ JQuery",
+          "frontend:Frontend"
+        ]
+      },
+      {
+        "description": "APIs for the  website. <br/>Front end improvements<br/>",
+        "name": "Web and Mobile Site ",
+        "skills": [
+          "backend:Backend",
+          "Python /Django",
+          "Javascript/ JQuery",
+          "frontend:Frontend"
+        ]
+      }
+    ]
+  },
+  {
+    "company": "<i>Jan 2012-June 2012</i>  Rhythm and Hues Studios <b>MIS Intern</b>",
+    "projects": [
+      {
+        "description": "Add remove update inventory.",
+        "name": "Inventory dashboard",
+        "skills": [
+          "CGI/Perl",
+          "PHP",
+          "Ajax"
+        ]
+      },
+      {
+        "description": "One dashboard to view Pie Charts",
+        "name": "Global Monitoring Dashboard",
+        "skills": [
+          "ExtJS",
+          "Python"
+        ]
+      },
+      {
+        "description": "Script in python to ping various location and email if there is a latency lag.",
+        "name": "Latency Scripts ",
+        "skills": [
+          "Python"
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Personal Projects",
+    "projects": [
+      {
+        "description": "Admin dashboard to send SMS to BSNL employees to notify them on reimbursements ",
+        "name": "Nachrict (BSNL)",
+        "skills": [
+          "backend:Backend",
+          "Python /Django",
+          "frontend:Frontend",
+          "Javascript",
+          "other:Mercurial",
+          "other:celery/RabbitMQ"
+        ]
+      },
+      {
+        "description": "Placement Portal for college. <br/>Students can enter details. View and apply for on campus placements.<br/>Admins could add new company, filter students and get aggregated data",
+        "name": "La-ResumeX",
+        "skills": [
+          "backend:Backend",
+          "Python /Django",
+          "frontend:Frontend",
+          "Javascript",
+          "other:Mercurial"
+        ]
+      },
+      {
+        "description": "Feedback management system for courses and teachers after every semester",
+        "name": "Change-Agent",
+        "skills": [
+          "backend:Back-end",
+          "Python /Django",
+          "frontend:Front-end",
+          "Javascript",
+          "other:Mercurial"
+        ]
+      }
+    ]
+  }
+]
