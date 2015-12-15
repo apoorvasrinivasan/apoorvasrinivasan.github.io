@@ -33,11 +33,7 @@ for item in menuitems
   item.addEventListener 'click', ->
     location.hash = this.getAttribute('href')
     setTabs()
-for more in  get('.more')
-  more.addEventListener 'click', ->
-    p = this.parentNode.nextElementSibling.nextElementSibling
-    p.style.display = if p.style.display is 'block' then 'none' else  'block'   
-    true
+
 fillskills = ->
   SKILLS = [
     {
@@ -135,6 +131,60 @@ getRec =->
   xhttp.open "GET", "rec.json", true
   xhttp.send();
   true
+getWorkex=->
+  xhttp = new XMLHttpRequest()
+  xhttp.onreadystatechange = ->
+    if xhttp.readyState is 4 and xhttp.status is 200
+      data = JSON.parse(xhttp.responseText)
+      ul = get('.projects')[0];
+      for i in data
+        li = document.createElement "li"
+        commit = document.createElement "span"
+        commit.setAttribute "class","commits sub-brown"
+        commit.innerHTML = i.company;
+        li.appendChild commit
+
+        for projects in i.projects
+          pro = document.createElement "div"
+          pro.setAttribute "class", "project-details"
+          li.appendChild pro
+          title = document.createElement "div"
+          title.classList.add('title')
+          title.innerHTML = projects.name
+          if projects.description 
+            more = document.createElement "div"
+            more.classList.add "more"
+            more.addEventListener 'click', ->
+              p = this.parentNode.nextElementSibling.nextElementSibling
+              p.style.display = if p.style.display is 'block' then 'none' else  'block'   
+              true
+            title.appendChild more
+          pro.appendChild title
+
+          stacks = document.createElement "div"
+          stacks.setAttribute "class", "subtitle sub-brown-dark"
+          for st in projects.skills
+            span = document.createElement "span"
+            span.classList.add "stack-tags"
+            text  = st
+            if ":" in st
+              k= st.split ":"
+              span.classList.add k[0]
+              text = k[1]
+            span.innerHTML = text
+            stacks.appendChild span  
+          pro.appendChild stacks
+          if projects.description
+            p = document.createElement "p"
+            p.setAttribute "class", "description"
+            p.innerHTML = projects.description
+            pro.appendChild p
+        ul.appendChild li
+  xhttp.open "GET", "workex.json", true
+  xhttp.send();
+  true
+
 setTabs()
 fillskills()
+getWorkex()
 getRec()
