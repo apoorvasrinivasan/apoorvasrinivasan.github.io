@@ -35,7 +35,7 @@
     padding: 0;
   }
   .projects .more{display: none;}
-  .projects .description{display: block;}
+  .projects .description{display: block;font-size: .7em;}
   .stack-tags {
     background: transparent;
     border: none;
