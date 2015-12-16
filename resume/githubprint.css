@@ -1,5 +1,9 @@
  .contentsection{width:90%;}
  h1{margin:0 -5px;text-transform: capitalize;}
+ h1 a {
+    text-transform: lowercase;
+    margin-left: 0;
+}
  .header{display: none ;}
   #headerSection .btn{display: none ;}
   .gicon:before{display: none ;content:"" ;}
@@ -8,13 +12,17 @@
     display: block !important;
     margin-bottom: 40px;
   }
-  .tab-items .heading{
+  .tab-items .heading,.refferals .heading{
     border: none;
     background-color: transparent;
     border-bottom: 1px solid;
     display: block;
     padding: 0;
     margin-bottom: 10px;
+        margin-top: 10px;
+    font-size: 1.5em;
+    color: #68777d !important;
+    font-weight: 500;
   }
   #skill .btn.arrow, #skill .h1{display: none;}
   .projects li:before{content:"";}
@@ -31,19 +39,19 @@
   .projects .project-details {
     border: none;
     margin-left: 9px;
-    margin-top: 10px;
     padding: 0;
   }
   .projects .more{display: none;}
-  .projects .description{display: block;font-size: .7em;}
+  .projects .description{display: block;font-size: .7em;margin-left: 3px;border-left: 0;padding-left: 0;}
   .stack-tags {
     background: transparent;
     border: none;
     display: inline-block;
-    font-size: 10px;
+    font-size: .7em;
     padding: 2px 5px;
-    color: black;
+    color: #596063;
   }
+  span.stack-tags:not(:last-child):after{content: ","}
   .projects .frontend,.projects .backend,.projects .others{
     display: none;
   }
@@ -86,3 +94,6 @@
     
 }
 #recommendation .recomends-content{display: none;}
+.refferals >div a.linkedin-icon{display: none;}
+.refferals >div a.email-icon:before{content: "";}
+.refferals >div a.email-icon:after{content: attr(href);}

@@ -7,6 +7,7 @@
 .icon.bitbucket-icon:before{content:"\f171";}
 .icon.linkedin-icon:before{content:"\f0e1";}
 .icon.pintrest-icon:before{content:"\f0d2";}
+.icon.email-icon:before{content:"\f0e0";}
 .gicon.book-icon:before{content:"\f001";}
 .gicon.commits-icon:before{content:'\f046';}
 .gicon.branch-icon:before{content:'\f020';}
@@ -310,6 +311,10 @@ ul.summary-box::after {
     vertical-align: middle;
     width: 37px;
 }
+.refferals a.icon:hover::before{
+  transform:scale(1.5);
+  transition: all 1s ease 0s;
+}
 .refferal a{
   font-size:  16px;
 }
@@ -392,6 +397,7 @@ ul.summary-box::after {
     text-align: center;
   }
   #headerSection .btn:nth-child(2) {float: left;}
+  .about{width: 80%;}
   /* MENU */
   .summary-box::after {display: none;}
   .summary-box li {display: none;}
