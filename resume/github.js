@@ -156,7 +156,7 @@
     var xhttp;
     xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-      var data, l, len1, li, recs, ref, results, src, tar;
+      var data, l, len1, li, name, recs, ref, results, src, tar;
       if (xhttp.readyState === 4 && xhttp.status === 200) {
         data = JSON.parse(xhttp.responseText);
         src = get('#recTemplate');
@@ -166,10 +166,23 @@
         for (l = 0, len1 = ref.length; l < len1; l++) {
           recs = ref[l];
           li = src.children[0].cloneNode(true);
-          get('.name', li)[0].innerHTML = recs.recommender.firstName + recs.recommender.lastName;
-          get('.title', li)[0].innerHTML = recs.recommender.headline;
+          name = get('.name', li)[0];
+          name.innerHTML = recs.recommender.firstName + recs.recommender.lastName;
+          if (recs.recommender.publicProfileUrl) {
+            name.setAttribute("href", recs.recommender.publicProfileUrl);
+          } else {
+            name.classList.remove('blue');
+            name.removeAttribute("href");
+          }
+          if (recs.recommender.headline) {
+            get('.title', li)[0].innerHTML = recs.recommender.headline;
+          }
           get('.content', li)[0].innerHTML = recs.recommendationText;
-          get('.pic', li)[0].src = recs.recommender.pictureUrl;
+          if (recs.recommender.pictureUrl) {
+            get('.pic', li)[0].src = recs.recommender.pictureUrl;
+          } else {
+            get('.pic', li)[0].remove();
+          }
           results.push(tar.appendChild(li));
         }
         return results;

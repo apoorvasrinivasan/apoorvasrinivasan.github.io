@@ -123,10 +123,20 @@ getRec =->
 
       for recs in data.recommendationsReceived.values
         li = src.children[0].cloneNode(true);
-        get('.name',li)[0].innerHTML = recs.recommender.firstName + recs.recommender.lastName 
-        get('.title',li)[0].innerHTML = recs.recommender.headline;
+        name = get('.name',li)[0]
+        name.innerHTML = recs.recommender.firstName + recs.recommender.lastName 
+        if recs.recommender.publicProfileUrl 
+          name.setAttribute "href", recs.recommender.publicProfileUrl
+        else
+          name.classList.remove('blue')
+          name.removeAttribute "href"
+        if recs.recommender.headline
+          get('.title',li)[0].innerHTML = recs.recommender.headline;
         get('.content',li)[0].innerHTML = recs.recommendationText;
-        get('.pic',li)[0].src = recs.recommender.pictureUrl;
+        if recs.recommender.pictureUrl
+          get('.pic',li)[0].src = recs.recommender.pictureUrl;
+        else 
+          get('.pic',li)[0].remove()
         tar.appendChild(li);
   xhttp.open "GET", "rec.json", true
   xhttp.send();
