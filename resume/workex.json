@@ -3,11 +3,13 @@
     "company": "<i>September 2015</i>  Zimply ",
     "projects": [
       {
-        "description": "Zimply Website\n Shop , Cart and payment integration,\n Responsive for all device types.<br/>",
-        "name": "Zimply Website",
+        "description": "Mobile Website",
+        "name": "Mobile Website",
         "skills": [
           "frontend: Front-end",
-          "HTML/CSS"
+          "Node",
+          "Express",
+          "Jade"
         ]
       },
       {
@@ -16,7 +18,8 @@
         "skills": [
           "frontend: Front-end",
           "Semantic UI",
-          "Ember JS"
+          "Ember JS",
+          "CoffeeScript"
         ]
       },
       {
@@ -24,7 +27,16 @@
         "skills": [
           "frontend: Front-end",
           "Knockout JS",
-          "Semantic UI"
+          "Semantic UI",
+          "CoffeeScript"
+        ]
+      },
+      {
+        "description": "Zimply Website\n Shop , Cart and payment integration,\n Responsive for all device types.<br/>",
+        "name": "Zimply Website",
+        "skills": [
+          "frontend: Front-end",
+          "HTML/CSS"
         ]
       }
     ]
@@ -40,7 +52,7 @@
           "HTML/CSS",
           "Responsive",
           "JQuery",
-          "other:Team management"
+          "others:Team management"
         ]
       },
       {
@@ -69,9 +81,9 @@
           "HTML CSS",
           "Jquery",
           "Jinja/ Jinja2",
-          "backend",
+          "backend:backend",
           "tornado",
-          "other:ansible"
+          "others:ansible"
         ]
       },
       {
@@ -89,8 +101,8 @@
         "skills": [
           "backend:Backend",
           "Python /Django",
-          "Javascript/ JQuery",
-          "frontend:Frontend"
+          "frontend:Frontend",
+          "Javascript/ JQuery"
         ]
       },
       {
@@ -99,8 +111,8 @@
         "skills": [
           "backend:Backend",
           "Python /Django",
-          "Javascript/ JQuery",
-          "frontend:Frontend"
+          "frontend:Frontend",
+          "Javascript/ JQuery"
         ]
       }
     ]
@@ -145,8 +157,8 @@
           "Python /Django",
           "frontend:Frontend",
           "Javascript",
-          "other:Mercurial",
-          "other:celery/RabbitMQ"
+          "others:Mercurial",
+          "others:celery/RabbitMQ"
         ]
       },
       {
@@ -157,7 +169,7 @@
           "Python /Django",
           "frontend:Frontend",
           "Javascript",
-          "other:Mercurial"
+          "others:Mercurial"
         ]
       },
       {
@@ -168,7 +180,7 @@
           "Python /Django",
           "frontend:Front-end",
           "Javascript",
-          "other:Mercurial"
+          "others:Mercurial"
         ]
       }
     ]

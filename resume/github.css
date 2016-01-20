@@ -207,7 +207,7 @@ ul.summary-box::after {
     display: inline-block;
     font-size: 13px;
     left: 0;
-    min-width: 8%;
+    min-width: 15%;
     padding: 1%;
     position: absolute;
     top: -2px;
@@ -215,9 +215,9 @@ ul.summary-box::after {
 }
 .skill-set-graph li {
   border-bottom: 1px solid #eee;
-  padding: 5px 5px 5px 9%;
+  padding: 5px 5px 5px 15%;
   position: relative;
-  width: 90%;
+  width: 85%;
 }
 .graph {
   display: inline-block;
@@ -226,7 +226,7 @@ ul.summary-box::after {
   transition: all 1s ease 0s;
   width: 0;
 }
-.frontend{background-color: rgb(255,66,130) !important;color: #fff;border:0 !important;}
+.frontend{background-color:#B68ACB !important;color: #fff;border:0 !important;}
 .backend{background-color: rgb(0,189,208) !important;color: #fff;border:0 !important;}
 .others{background-color: rgb(220,231,117) !important;color: #555;border:0 !important;}
 
@@ -449,7 +449,7 @@ ul.summary-box::after {
   .projects li{margin-top: 0;}
   .projects .commits {background: #eee none repeat scroll 0 0;color: #525252;margin: 0;padding: 1em 0 1em 1em;}
   .projects .project-details {margin: -3px;}
-  .projects .frontend.stack-tags{background: none !important; color: rgb(255, 66, 130);}
+  .projects .frontend.stack-tags{background: none !important; color: #B68ACB;}
   .projects .backend.stack-tags{background: none !important; color: rgb(0, 189, 208);}
   .projects .others.stack-tags {background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;color: rgb(185, 180, 15);}
   .projects .stack-tags {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border: 0 none;}

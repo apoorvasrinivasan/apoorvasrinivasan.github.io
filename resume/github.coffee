@@ -42,43 +42,63 @@ fillskills = ->
       stack:'frontend'
     },
     {
-      skill:'Angular JS',
-      value:5,
-      stack:'frontend'
-    },
-  {
       skill:'CSS',
       value:9,
       stack:'frontend'
     },
-  {
+    {
+      skill:'Semantic UI',
+      value:6,
+      stack:'frontend'
+    },
+    {
       skill:'Javascript',
       value:8,
       stack:'frontend'
     },
-  {
+    {
       skill:'JQuery',
       value:8,
       stack:'frontend'
     },
-  {
-      skill:' tornado',
+    {
+      skill:'Angular JS',
       value:5,
-      stack:'backend'
+      stack:'frontend'
     },
-  {
-      skill:'flask',
-      value:5,
-      stack:'backend'
+    {
+      skill:'Ember JS',
+      value:3,
+      stack:'frontend'
+    },
+    {
+      skill:'Knockout JS',
+      value:3,
+      stack:'frontend'
+    },
+    {
+      skill:'CoffeeScript',
+      value:6,
+      stack:'frontend'
     },
   {
       skill:'Django',
-      value:8,
+      value:7,
       stack:'backend'
     },
     {
       skill:'Python',
-      value:7,
+      value:6,
+      stack:'backend'
+    },
+    {
+      skill:' tornado',
+      value:4,
+      stack:'backend'
+    },
+    {
+      skill:'flask',
+      value:4,
       stack:'backend'
     },
     {
