@@ -230,9 +230,9 @@ getRec()
 
 header = get('.icon',get('section')[0])
 for icon in header
-  icon.click =->
+  icon.onclick =->
     try
-      className = this.className.match(/.*-icon/)[0].slice(0,-5)
+      className = this.className.match(/\w*-icon/)[0].slice(0,-5)
     catch e
       className = this.className
     ga('send','event',GA,'header', className)

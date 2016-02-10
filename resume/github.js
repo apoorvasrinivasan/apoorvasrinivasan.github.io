@@ -300,10 +300,10 @@
 
   for (l = 0, len1 = header.length; l < len1; l++) {
     icon = header[l];
-    icon.click = function() {
+    icon.onclick = function() {
       var className, e, error;
       try {
-        className = this.className.match(/.*-icon/)[0].slice(0, -5);
+        className = this.className.match(/\w*-icon/)[0].slice(0, -5);
       } catch (error) {
         e = error;
         className = this.className;
