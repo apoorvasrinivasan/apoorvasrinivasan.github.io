@@ -13,11 +13,12 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-71505892-1', 'auto');
+  ga('create', 'UA-71505892-1', {'cookieDomain':'none'});
   ga('send', 'pageview',{
     'page': 'Resume',
     'title': 'Resume'
   });
+  var GA = 'Resume'
 
 </script>
 </head>
@@ -35,10 +36,10 @@
 <section id='headerSection' class='hr'>
   <div class="contentsection ">
     <h1 class="gicon book-icon left">apoorva srinivasan
-    <a href="mailto:avroopa.apoorva@zimply.in">(avroopa.apoorva@gmail.com)</a>
+    <a href="mailto:avroopa.apoorva@zimply.in" onclick="ga('send', 'event',GA,'General', 'email');">(avroopa.apoorva@gmail.com)</a>
     </h1>
-    <div class="btn right" onclick='window.print()'>Print</div>
-    <div class="btn right"><a href="resume.pdf" download>Download</a></div>
+    <div class="btn right" onclick="ga('send', 'event', GA,'General', 'Print');window.print()">Print</div>
+    <div class="btn right"><a onclick= "ga('send', 'event',GA, 'General', 'download');" href="resume.pdf" download>Download</a></div>
   </div>
 </section>
 <section class="contentsection main-content ">
@@ -80,13 +81,13 @@
 <h3 class="heading ">References</h3>
 <div class="blue">
   Ashish Singh: 
-  <a class='sub-brown-dark icon linkedin-icon' href="https://www.linkedin.com/profile/view?id=AAkAAASJOWIBTxCLF3mY-HSOaTLjZMOiWkbjfuA"></a> 
-  <a class='sub-brown-dark icon email-icon' href="mailto:ashish.iitd07@gmail.com"></a> 
+  <a class='sub-brown-dark icon linkedin-icon' onclick ="ga('send','event',GA,'referer-link','Ashish Singh')" href="https://www.linkedin.com/profile/view?id=AAkAAASJOWIBTxCLF3mY-HSOaTLjZMOiWkbjfuA"></a> 
+  <a class='sub-brown-dark icon email-icon' onclick ="ga('send','event',GA,'referer-email','Ashish Singh')" href="mailto:ashish.iitd07@gmail.com"></a> 
 </div>
 <div class="blue">
   Anuvrat Parashar: 
-  <a class='sub-brown-dark icon linkedin-icon' href="https://www.linkedin.com/profile/view?id=AAkAAAM5vqUBK47YrrHMu34ThMQAIAren5-I9ZA"></a> 
-  <a class='sub-brown-dark icon email-icon' href="mailto:anuvrat@anuvrat.in"></a> 
+  <a class='sub-brown-dark icon linkedin-icon'  onclick ="ga('send','event',GA,'referer-link','Anuvrat Parashar')" href="https://www.linkedin.com/profile/view?id=AAkAAAM5vqUBK47YrrHMu34ThMQAIAren5-I9ZA"></a> 
+  <a class='sub-brown-dark icon email-icon' onclick ="ga('send','event',GA,'referer-email','Anuvrat Parashar')" href="mailto:anuvrat@anuvrat.in"></a> 
 </div>
 </div>
 </div>

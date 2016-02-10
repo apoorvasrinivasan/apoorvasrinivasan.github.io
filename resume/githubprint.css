@@ -79,7 +79,7 @@
     padding: 0;
     padding-bottom: 7px;
     position: relative;
-    width: 68px;
+    width: 107px;
 }
 #skillSet > li::before {
     /*box-shadow: 0 0 0 1px #ccc;*/
@@ -100,7 +100,7 @@
     transition:none;
     position: relative;   
 }
-.graph.frontend{box-shadow:0 4px 0 1px rgb(255,66,130);}
+.graph.frontend{box-shadow:0 4px 0 1px #B68ACB;}
 .graph.backend{box-shadow:0 4px 0 1px rgb(0,189,208);}
 .graph.others{box-shadow:0 4px 0 1px rgb(220,231,117);}
 #recommendation .recomends-content{display: none;}

@@ -21,6 +21,7 @@ get =(x,parent = document) ->
 setTabs = ->
   tabs = get('.tabs')[0];
   menuitems = get('li',tabs)
+
   hash = location.hash.substr(1) or menuitems[0].getAttribute 'href';
   (i.classList.remove('active'); if i.getAttribute('href') is hash then i.classList.add('active')) for i in menuitems
   hide get '.tab-items'
@@ -32,6 +33,7 @@ menuitems = get('li',tabs)
 for item in menuitems
   item.addEventListener 'click', ->
     location.hash = this.getAttribute('href')
+    ga('send','event',GA,'tabs',this.getAttribute('href'))
     setTabs()
 
 fillskills = ->
@@ -68,6 +70,11 @@ fillskills = ->
     },
     {
       skill:'Ember JS',
+      value:3,
+      stack:'frontend'
+    },
+    {
+      skill:'Express/Node',
       value:3,
       stack:'frontend'
     },
@@ -186,7 +193,9 @@ getWorkex=->
             more.classList.add "more"
             more.addEventListener 'click', ->
               p = this.parentNode.nextElementSibling.nextElementSibling
-              p.style.display = if p.style.display is 'block' then 'none' else  'block'   
+              p.style.display = if p.style.display is 'block' then 'none' else  'block'
+              if p.style.display is 'block'   
+                ga('send','event',GA,'workex', projects.name)
               true
             title.appendChild more
           pro.appendChild title
@@ -218,3 +227,12 @@ setTabs()
 fillskills()
 getWorkex()
 getRec()
+
+header = get('.icon',get('section')[0])
+for icon in header
+  icon.click =->
+    try
+      className = this.className.match(/.*-icon/)[0].slice(0,-5)
+    catch e
+      className = this.className
+    ga('send','event',GA,'header', className)
