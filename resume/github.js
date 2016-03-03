@@ -245,9 +245,10 @@
               more.addEventListener('click', function() {
                 var p;
                 p = this.parentNode.nextElementSibling.nextElementSibling;
+                var project_name = this.parentNode.textContent
                 p.style.display = p.style.display === 'block' ? 'none' : 'block';
                 if (p.style.display === 'block') {
-                  ga('send', 'event', GA, 'workex', projects.name);
+                  ga('send', 'event', GA, 'workex', project_name);
                 }
                 return true;
               });

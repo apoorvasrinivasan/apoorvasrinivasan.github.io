@@ -194,8 +194,9 @@ getWorkex=->
             more.addEventListener 'click', ->
               p = this.parentNode.nextElementSibling.nextElementSibling
               p.style.display = if p.style.display is 'block' then 'none' else  'block'
+              project_name = this.parentNode.textContent
               if p.style.display is 'block'   
-                ga('send','event',GA,'workex', projects.name)
+                ga('send','event',GA,'workex', project_name)
               true
             title.appendChild more
           pro.appendChild title
