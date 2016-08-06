@@ -13,7 +13,7 @@ header {
     height: 530px;
     width: 100%;
     position: relative;
-    filter:grayscale(50%);
+    filter:grayscale(68%);
     -webkit-filter:grayscale(50%);
     z-index: 6;
 }
@@ -26,7 +26,7 @@ header.fixed{position: fixed;}
     
 }
 h1 {
-    font-family:'Brux', sans-serif;
+    /*font-family:'Brux', sans-serif;*/
     color: white;
     transition: color 1s ease 0s;
     font-size: 2rem;
