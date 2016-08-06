@@ -114,6 +114,17 @@
           "frontend:Frontend",
           "Javascript/ JQuery"
         ]
+      },
+      {
+        "description": "App.zopper.com. Implementing basic paralax using pure javascript",
+        "name": "<a href ='https://web.archive.org/web/20140726195843/http://app.zopper.com/' target='_blank'>App Landing page </a>",
+        "skills": [
+          "frontend:Frontend",
+          "HTML",
+          "CSS",
+          "paralax",
+          "javascript"
+        ]
       }
     ]
   },
