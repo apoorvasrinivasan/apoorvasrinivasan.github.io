@@ -1,0 +1,133 @@
+$yellow=#d2a435;
+$blue=#246989;
+body
+  font:14px/1  Helvetica, Arial, sans-serif
+  background-color: black
+a
+ text-decoration: none
+ color: inherit
+
+
+#card
+  width: cardWidth= 800px
+  position: absolute
+  max-width: 90%;
+  height:h= (@width / 1.586)
+  overflow:hidden
+  top:calc(50% - 300px)
+  left:calc(50% - 450px)
+  background-color:white
+  display: flex
+  > .lhs
+    flex: lflex = .7
+    background-color: $blue
+    .content
+      position: absolute
+      top: 15%
+      width: 200px
+      left: ((lflex * cardWidth) /2) -  (@width /2)
+
+      .image
+        border-radius: 50%
+        overflow: hidden
+        height: 200px
+        box-shadow: 0 0 4px -2px #000
+
+  > .rhs
+    flex: rflex =  .3
+    position:relative
+    radd = .2
+    &:before
+      display: block
+      background-color:white
+      transform:skew(-(radd)rad)
+      height:100%
+      position: absolute
+      left: -(radd * (h/2)) - 10
+      width: -@left * 2
+      content:""
+    .content
+      position: absolute
+      padding-top:50%
+      width:(rflex * cardWidth);
+      height:100%;
+      top:0
+      right:0
+      .name 
+        position: absolute
+        top: 3em
+        font-size: 20px
+        background: $yellow
+        padding: .5em
+        width: 100%
+        right:0
+        padding-left: 3em
+        box-shadow: 0px 2px 1px #8c7236;
+        &:before
+          content: "";
+          display: inline-block
+          position: absolute
+          height: 5px;
+          background: $yellow
+          width: 37px
+          left: 0px
+          bottom: -4px
+          transform: rotate(.20rad)
+          box-shadow: 0px 3px 0px #8c7236;
+.bio
+  font: 18px helvetica
+  margin-top: 1em
+  padding: 0
+  text-align: center
+  a
+    color: $blue
+    font-size: .9em
+ul.bio
+  text-align: left
+  margin: 0
+  margin-top: 5em
+  list-style: none
+.footer
+    position: absolute
+    display: flex
+    bottom: 5%
+    height: 7em
+    width: 73%
+    left: 5%
+    flex-direction: column
+    flex-wrap: wrap
+    align-content: space-around
+
+  a
+    transition: 0.2s all;
+    &:hover
+      transform scale(1.2)
+      opacity 1
+
+@font-face{font-family:Icons;src:url(fonts/icons.eot);src:url(fonts/icons.eot?#iefix) format('embedded-opentype'),url(fonts/icons.woff2) format('woff2'),url(fonts/icons.woff) format('woff'),url(fonts/icons.ttf) format('truetype'),url(fonts/icons.svg#icons) format('svg');font-style:normal;font-weight:400;font-variant:normal;text-decoration:inherit;text-transform:none}
+.icon 
+  flex: 1
+  flex-basis: 50%;
+  opacity:.5
+  &:before
+    font-family: 'Icons'
+    margin-right: 5px
+    font-size:2.1em
+    display: inline-block
+    vertical-align: middle
+  &.github-icon:before
+    content:"\f09b"
+  &.twitter-icon:before
+    content:"\f099"
+  &.stackoverflow-icon:before
+    content:"\f16c"
+  &.bitbucket-icon:before
+    content:"\f171"
+  &.linkedin-icon:before
+    content:"\f0e1"
+  &.pintrest-icon:before
+    content:"\f0d2"
+  &.instagram-icon:before
+    content:"\f16d"
+  &.whatsapp-icon:before
+    content: "\f232"
