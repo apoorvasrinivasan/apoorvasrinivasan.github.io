@@ -92,31 +92,35 @@ a
             transform: rotate(.20rad)
             box-shadow: 0px 3px 0px #8c7236;
 .bio
-  font: 1.1em
-  margin-top: 1em
-  padding: 0
-  text-align: center
+  font 1.1em
+  margin-top 1em
+  padding 0
+  text-align center
   a
-    color: $blue
-    font-size: .9em
+    color $blue
+    font-size 1.3em
+    background #fff
+    padding 5px 6px
+    border-radius 5px
+
 ul.bio
-  text-align: left
-  margin-top: 5em
-  list-style: none
+  text-align left
+  margin-top 5em
+  list-style none
   @media screen and (max-width: $cardWidth)
-    margin: 0
+    margin 0
     padding 0 13px
 
 .footer
-    position: absolute
-    display: flex
-    bottom: 5%
-    height: 7em
-    width: 73%
-    left: 5%
-    flex-direction: column
-    flex-wrap: wrap
-    align-content: space-around
+    position absolute
+    display flex
+    bottom 5%
+    height 7em
+    width 73%
+    left 5%
+    flex-direction column
+    flex-wrap wrap
+    align-content space-around
     @media screen and (max-width: $cardWidth)
       width 90%
       position static
@@ -138,19 +142,7 @@ ul.bio
     font-size:2.1em
     display: inline-block
     vertical-align: middle
-  &.github-icon:before
-    content:"\f09b"
-  &.twitter-icon:before
-    content:"\f099"
-  &.stackoverflow-icon:before
-    content:"\f16c"
-  &.bitbucket-icon:before
-    content:"\f171"
-  &.linkedin-icon:before
-    content:"\f0e1"
-  &.pintrest-icon:before
-    content:"\f0d2"
-  &.instagram-icon:before
-    content:"\f16d"
-  &.whatsapp-icon:before
-    content: "\f232"
+hash = (github '\f09b') (twitter '\f099') (stackoverflow '\f16c') (bitbucket '\f171') (linkedin '\f0e1') (pintrest '\f0d2') (instagram '\f16d') ('whatsapp' '\f232')
+for num in hash
+  &.{num[0]}-icon:before
+    content : num[1]  

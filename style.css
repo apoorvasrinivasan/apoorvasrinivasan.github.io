@@ -117,7 +117,10 @@ a {
 }
 .bio a {
   color: #246989;
-  font-size: 0.9em;
+  font-size: 1.3em;
+  background: #fff;
+  padding: 5px 6px;
+  border-radius: 5px;
 }
 ul.bio {
   text-align: left;
@@ -177,27 +180,27 @@ a:hover {
   display: inline-block;
   vertical-align: middle;
 }
-.icon.github-icon:before {
-  content: "\f09b";
+.github-icon:before {
+  content: '\f09b';
 }
-.icon.twitter-icon:before {
-  content: "\f099";
+.twitter-icon:before {
+  content: '\f099';
 }
-.icon.stackoverflow-icon:before {
-  content: "\f16c";
+.stackoverflow-icon:before {
+  content: '\f16c';
 }
-.icon.bitbucket-icon:before {
-  content: "\f171";
+.bitbucket-icon:before {
+  content: '\f171';
 }
-.icon.linkedin-icon:before {
-  content: "\f0e1";
+.linkedin-icon:before {
+  content: '\f0e1';
 }
-.icon.pintrest-icon:before {
-  content: "\f0d2";
+.pintrest-icon:before {
+  content: '\f0d2';
 }
-.icon.instagram-icon:before {
-  content: "\f16d";
+.instagram-icon:before {
+  content: '\f16d';
 }
-.icon.whatsapp-icon:before {
-  content: "\f232";
+.whatsapp-icon:before {
+  content: '\f232';
 }
