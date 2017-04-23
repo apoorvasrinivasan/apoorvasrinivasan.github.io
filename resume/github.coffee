@@ -55,7 +55,7 @@ fillskills = ->
     },
     {
       skill:'Javascript',
-      value:8,
+      value:7,
       stack:'frontend'
     },
     {
@@ -64,28 +64,43 @@ fillskills = ->
       stack:'frontend'
     },
     {
-      skill:'Angular JS',
+      skill:'Vue JS',
+      value:6,
+      stack:'frontend'
+    },
+    {
+      skill:'Chart JS',
       value:5,
+      stack:'frontend'
+    },  
+    {
+      skill:'Angular JS',
+      value:6,
       stack:'frontend'
     },
     {
       skill:'Ember JS',
-      value:3,
+      value:2,
       stack:'frontend'
     },
     {
       skill:'Express/Node',
-      value:3,
+      value:2,
       stack:'frontend'
     },
     {
       skill:'Knockout JS',
+      value:4,
+      stack:'frontend'
+    },
+    {
+      skill:'stylus/scss/less',
       value:3,
       stack:'frontend'
     },
     {
       skill:'CoffeeScript',
-      value:6,
+      value:5,
       stack:'frontend'
     },
   {
@@ -105,22 +120,22 @@ fillskills = ->
     },
     {
       skill:'flask',
-      value:4,
+      value:3,
       stack:'backend'
     },
     {
       skill:'GIT',
-      value:5,
+      value:2,
       stack:'others'
     },
     {
       skill:'nginx',
-      value:3,
+      value:1,
       stack:'others'
     },
     {
       skill:'Linux',
-      value:4,
+      value:3,
       stack:'others'
     },
   ]
