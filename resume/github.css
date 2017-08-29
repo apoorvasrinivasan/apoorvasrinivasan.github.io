@@ -1,5 +1,6 @@
 .icon:before{font-family: 'Icons';margin-right: 5px; display: inline-block;vertical-align: middle;}
 .gicon:before{font-family: 'octicons';margin-right: 5px; display: inline-block;vertical-align: middle;}
+.icon.home-icon:before{content:"\f015";}
 .icon.github-icon:before{content:"\f09b";}
 .icon.facebook-icon:before{content:"\f09a";}
 .icon.twitter-icon:before{content:"\f099";}
