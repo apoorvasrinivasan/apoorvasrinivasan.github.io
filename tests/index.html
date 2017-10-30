@@ -1,7 +1,8 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
 body{
   font:12px/14px Calibri, Verdana, sans-serif ;
-  width: 1000px;
+  padding: 2em;
   margin:0 auto;
 }
   h1{
@@ -11,6 +12,7 @@ body{
 #one form {
     margin: 2em auto;
     width: 300px;
+
 }
 #one form label{
     display: flex;
@@ -38,8 +40,9 @@ span.word {
 <b>Instructions</b>
 <ul>
   <li>You will see words one by one</li>
-  <li>The words will appear for a short time</li>
+  <li>The words will appear for a 1/10th of a second</li>
   <li>Type the words as you see.</li>
+  <li>a downlodable file would be available int hte end. please email it to me</li>
 </ul>
 <form name='particiapant'>
   <label>Name<input name='name'></label>
@@ -119,7 +122,7 @@ function startSense(){
         $('.word').hide();
         $('.word').next('input.input').show()[0].focus();
         
-      },500)
+      },100)
     }
     catch(e){
       console.log(e)
