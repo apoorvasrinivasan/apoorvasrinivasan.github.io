@@ -135,6 +135,7 @@ ul.bio {
     border-bottom: 1px solid #ccc;
     padding-bottom: 11px;
     text-align: center;
+    cursor: default;
 }
 .bio li.bigyoutube{
   border:none;
