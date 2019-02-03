@@ -1,0 +1,218 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Span Of Attention</title>
+<style type="text/css">
+body{
+  font:12px/14px Calibri, Verdana, sans-serif ;
+  padding: 2em;
+  margin:0 auto;
+}
+  h1{
+    text-align: center;
+    padding: 1em;
+  }
+#one form {
+    margin: 2em auto;
+    width: 300px;
+
+}
+#one form label{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+#one form label input {width: 200px;border:none;border-bottom: 1px dotted;}
+button#startTest {
+    background-color: #246585;
+    border: 1px solid #246585;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0.5em 2em;
+}
+#two{display: none; text-align: center;}
+span.word {
+    display: block;
+    font-size: 8em;
+    margin: 1em;
+    text-align: center;
+}
+</style>
+<h1> Span of attention </h1>
+<div id='one'>
+<b>Instructions</b>
+<ul>
+  <li>You will see group of letters</li>
+  <li>The words will appear for a 1/10th of a second</li>
+  <li>Type the letters in the box as you see.</li>
+  <li>a downlodable file would be available int hte end. please email it to me</li>
+</ul>
+<form name='particiapant'>
+  <label>Name<input name='name'></label>
+  <label>Age<input name='age'></label>
+  <label>Gender<input name='gender'></label>
+  <label>Qualification<input name='qual'></label>
+  <label>Occupation<input name='occ'></label>
+  <button id='startTest'>Start</button>
+</form>
+</div>
+<div id="two">
+<span class='word'></span>
+<input class="input" data-i=0 data-j=0>
+</div>
+<div id='three'></div>
+<script type='text/javascript' src='https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-16/js/libs/jquery-3.1.1.min.js'></script>
+<script type="text/javascript">
+  $('#startTest').click(function(e){
+    e.stopPropagation();
+    e.preventDefault();
+    var name = document.forms.particiapant;
+    csv.push(['Name',name.name.value]);
+    csv.push(['Age',name.age.value]);
+    csv.push(['Gender',name.gender.value]);
+    csv.push(['Qualification',name.qual.value]);
+    csv.push(['Occupation',name.occ.value]);
+    $('#one').hide();
+    $('#two').show();
+    startNonsense();
+  });
+  let sense = false;
+  let answers = {}
+  let csv = []
+  let scores = []
+  fail = 0;
+  function startNonsense(){
+    words = [
+      ['SUL','RAB','TBR','RHB'],
+      ['APCK','BCKT','CTLI','IPNR'],
+      ['YSTUR','TARRA','JPLMZ','FAXCM'],
+      ['ZYTSAP','ZANTRA','KPRPBD','MRSOLP'],
+      ['RAYKZDM','APCKTRE','BPJRSUL','GKLJXTB'],
+      ['CBEOFOKA','GKPLXJTB','BCKTIP','YSTURFAX'],
+      ['CKLKRIOBZ','KWOLACLCL','BZSTKLMRC','NAKRSTJHOP']
+    ]
+    setWord(0,0);
+  }
+function startSense(){
+    fail = 0
+    console.log('starting sense');
+    $('input.input').data('i',0).data('j',0);
+    sense = true
+    words = [
+      ['HAT','CAP','BAG','TEA'],
+      ['ARMY','BANK','KING','WALL'],
+      ['BASIS','COVER','CLAIM','RUPEE'],
+      ['RESULT','CATTLE','BEARER','RUPEES'],
+      ['MANAGER','MEMBERS','COURAGE','QUALITY'],
+      ['ELECTION','EMERGENT','TEACHERS','MAJORITY'],
+      ['AMMENDMENT','SECRETARY','CONTINENT','COMMITTEE'],
+      ['CONFIDANCE','UNIVERSITY','MANAGEMENT','CONTINOUS'],
+      ['BATTLEFIELD','ACCUMALATED','IMMIDIATELY','ASSOCIATED'],
+      ['CIRCUMSTANCE','CHAMPIONSHIP','PRESIDENTIAL','CONFIDENTIAL'],
+      ['PSYCHOLOGICAL','CONSCIENCINESS','INTERNATIONAL','ABNORMALITIES'],
+      ['UNSKILLFULLNESS','COMMUNICATION','CLASSIFICATION','DISCOURAGEMENT'],
+      ['EXEMPLIFICATION','MISCONTRUCTION','REPRESENTATIVENESS','ACCOMODATIONAL']
+    ]
+    setWord(0,0);
+  }
+
+    
+  function setWord(i,j){
+    // console.log(i + '  ' +j)
+      $('.word').css('opacity',1);
+    $('.word').next('input.input').hide();
+    try{
+      $('.word').html(words[i][j]);
+      $('.word').next('input.input').data('word',words[i][j]);
+      setTimeout(function(){
+        $('.word')..css('opacity',0);
+        $('.word').next('input.input').show()[0].focus();
+        
+      },100)
+    }
+    catch(e){
+      console.log(e)
+      // console.log(words)
+      // console.log(i)
+      // console.log(j)
+      // console.log(answers);
+      // console.log(scores);
+      $('#two').hide();
+      if(!sense)
+        startSense() 
+      else
+        csvs();
+      
+    }
+  }
+  $('input.input').blur(function(){
+    let word = $(this).data('word');
+    var val = $(this).val();
+    answers[word] = val;
+    $(this).val('');
+    let i = parseInt($(this).data('i'));
+    let j = parseInt($(this).data('j')) +1;
+    score = calculate(i,j -1, word, val)
+    // console.log(i + ' .. ' + j)
+    if(j==4) {
+      //level over
+      // console.log('levelchange')
+      levelscore = word.length *4;
+      // console.log(levelscore)
+      // console.log(scores[i])
+      // console.log(scores[i] *100/levelscore)
+      if(scores[i] >= .75*levelscore){
+        console.log('proceeding to next level')
+        fail = 0;
+      }
+      else
+        fail ++
+      
+      i++;j=0;
+    }
+    $(this).data('i',i);
+    $(this).data('j',j);
+    // console.log(i + '  ' + j)
+    // console.log(fail)
+    if(fail < 2)
+      setWord(i,j);
+    else{
+      if(!sense){
+        startSense()
+      }
+      else
+        csvs();
+    }  
+    
+  })
+  function csvs(){
+    var pom = document.createElement('a');
+    let csvContent = "data:text/csv;charset=utf-8,";
+    csv.forEach(function(rowArray){
+       let row = rowArray.join(",");
+       csvContent += row + "\n";
+    }); 
+    var encodedUri = encodeURI(csvContent);
+    // window.open(encodedUri);
+    var link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "my_data.csv");
+    document.body.appendChild(link); // Required for FF
+
+    link.click();
+  }
+  function calculate(i,j, word, val){
+    
+    if(j==0) scores.push(0);
+    score = 0;
+    lw = '', lv = ''
+    for(var f =0;f<word.length;f++){
+      if(val[f] && word[f].toLowerCase() == val[f].toLowerCase()) score ++;
+      else{
+        lw += word[f];
+        lv += val[f];
+      }
+    }
+    csv.push([word,val,score])
+    scores[i] += score;
+    return score;
+  }
+</script>
