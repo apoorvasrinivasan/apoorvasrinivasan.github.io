@@ -121,11 +121,25 @@ a {
   background: #fff;
   padding: 5px 6px;
   border-radius: 5px;
+      margin-bottom: .1em;
+    display: inline-block;
 }
 ul.bio {
   text-align: left;
   margin-top: 5em;
   list-style: none;
+}
+.bio li {
+    margin-bottom: 11px;
+    width: 150px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 11px;
+    text-align: center;
+}
+.bio li.bigyoutube{
+  border:none;
+  font-size: 2em;
+  color: red;
 }
 @media screen and (max-width: 800px) {
   ul.bio {
@@ -203,4 +217,10 @@ a:hover {
 }
 .whatsapp-icon:before {
   content: '\f232';
+}
+.reddit-icon:before {
+  content: "\f1a1";
+}
+.youtube-icon:before {
+  content: "\f167";
 }
