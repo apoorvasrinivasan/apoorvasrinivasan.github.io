@@ -1,6 +1,39 @@
 [
   {
-    "company": "<i>March 2016</i>  Lyxel Labs Pvt Ltd ",
+    "company": "<i>December 2018</i>  Aspirelabs  <b>Marketing Intern</b>",
+    "projects":[
+      {
+        "description":"Program Facilation",
+        "name":"CleanEdge Accelerator",
+        "skills":[
+          "Helping out startups, and managing Mentor-Startup Sessions",
+          "Being SPOC for program and startups and Mentors",
+          "Organizing contact sessions"
+        ]
+      },
+      {
+        "description":"Managing Social Media accounts for various verticles of the company",
+        "name":"Social Media Management",
+        "skills":[
+          "social media posts",
+          "ideating the calender",
+          "being SPOC for varous agencies"
+        ]
+      },
+      {
+      "description":"Designing various posts, graphics, wireframes",
+      "name":"Designing",
+      "skills":[
+        "wireframes",
+        "GIMP 2.0"
+        "Inkscape",
+        "Others:Team Management"
+      ]
+    
+    }]
+  },
+ {
+    "company": "<i>March 2016</i>  Lyxel Labs Pvt Ltd  <b>Sr. Frontend Developer</b>",
     "projects": [
       {
         "description": "dashboard to present graphs  for progress from various portals like adwords, analytics, facebook etc",
@@ -26,7 +59,7 @@
     ]
   },
   {
-    "company": "<i>September 2015 - Feb 2016</i>  Zimply ",
+    "company": "<i>September 2015 - Feb 2016</i>  Zimply <b>Sr Frontend Developer</b> ",
     "projects": [
       {
         "description": "Mobile Website",
@@ -68,7 +101,7 @@
     ]
   },
   {
-    "company": "<i>Jan 2013- Aug 2015</i> Zopper  ",
+    "company": "<i>Jan 2013- Aug 2015</i> Zopper <b>Software Programmer</b> ",
     "projects": [
       {
         "description": "Main zopper.com website. <br/>Responsive for all device types.<br/>Pingdom score: 90+<br/>Team size: 2+",
@@ -186,6 +219,16 @@
   {
     "company": "Personal Projects",
     "projects": [
+      {
+        "description": "Website for CoCreateChange ",
+        "name": "CoCreateChange",
+        "skills": [
+          "jade",
+          "HTML",
+          "CoffeeScript",
+          "backend:Wintersmith"
+        ]
+      },
       {
         "description": "Website for innov8 ",
         "name": "innov8",
