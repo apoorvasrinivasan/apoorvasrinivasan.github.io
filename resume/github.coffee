@@ -195,45 +195,45 @@ getWorkex=->
         commit.setAttribute "class","commits sub-brown"
         commit.innerHTML = i.company;
         li.appendChild commit
+        if i.projects.length
+          for projects in i.projects
+            pro = document.createElement "div"
+            pro.setAttribute "class", "project-details"
+            li.appendChild pro
+            title = document.createElement "div"
+            title.classList.add('title')
+            title.innerHTML = projects.name
+            if projects.description 
+              more = document.createElement "div"
+              more.classList.add "more"
+              more.addEventListener 'click', ->
+                p = this.parentNode.nextElementSibling.nextElementSibling
+                p.style.display = if p.style.display is 'block' then 'none' else  'block'
+                project_name = this.parentNode.textContent
+                if p.style.display is 'block'   
+                  ga('send','event',GA,'workex', project_name)
+                true
+              title.appendChild more
+            pro.appendChild title
 
-        for projects in i.projects
-          pro = document.createElement "div"
-          pro.setAttribute "class", "project-details"
-          li.appendChild pro
-          title = document.createElement "div"
-          title.classList.add('title')
-          title.innerHTML = projects.name
-          if projects.description 
-            more = document.createElement "div"
-            more.classList.add "more"
-            more.addEventListener 'click', ->
-              p = this.parentNode.nextElementSibling.nextElementSibling
-              p.style.display = if p.style.display is 'block' then 'none' else  'block'
-              project_name = this.parentNode.textContent
-              if p.style.display is 'block'   
-                ga('send','event',GA,'workex', project_name)
-              true
-            title.appendChild more
-          pro.appendChild title
-
-          stacks = document.createElement "div"
-          stacks.setAttribute "class", "subtitle sub-brown-dark"
-          for st in projects.skills
-            span = document.createElement "span"
-            span.classList.add "stack-tags"
-            text  = st
-            if ":" in st
-              k= st.split ":"
-              span.classList.add k[0]
-              text = k[1]
-            span.innerHTML = text
-            stacks.appendChild span  
-          pro.appendChild stacks
-          if projects.description
-            p = document.createElement "p"
-            p.setAttribute "class", "description"
-            p.innerHTML = projects.description
-            pro.appendChild p
+            stacks = document.createElement "div"
+            stacks.setAttribute "class", "subtitle sub-brown-dark"
+            for st in projects.skills
+              span = document.createElement "span"
+              span.classList.add "stack-tags"
+              text  = st
+              if ":" in st
+                k= st.split ":"
+                span.classList.add k[0]
+                text = k[1]
+              span.innerHTML = text
+              stacks.appendChild span  
+            pro.appendChild stacks
+            if projects.description
+              p = document.createElement "p"
+              p.setAttribute "class", "description"
+              p.innerHTML = projects.description
+              pro.appendChild p
         ul.appendChild li
   xhttp.open "GET", "workex.json", true
   xhttp.send();
