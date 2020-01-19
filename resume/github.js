@@ -242,7 +242,7 @@
           commit.setAttribute("class", "commits sub-brown");
           commit.innerHTML = i.company;
           li.appendChild(commit);
-          if (i.projects.length) {
+          if (i.projects && i.projects.length) {
             ref = i.projects;
             for (m = 0, len2 = ref.length; m < len2; m++) {
               projects = ref[m];
