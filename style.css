@@ -85,6 +85,7 @@ a {
   margin-top: 0;
   font-size: 1.3em;
   background: #d2a435;
+  text-align: center;
 }
 @media screen and (min-width: 800px) {
   #card > .rhs .content .name {
@@ -115,7 +116,7 @@ a {
   padding: 0;
   text-align: center;
 }
-.bio a {
+.bio > a, .bio .bigyoutube > a {
   color: #246989;
   font-size: 1.3em;
   background: #fff;
@@ -147,7 +148,12 @@ ul.bio {
     margin: 0;
     padding: 0 13px;
   }
+  .bio li.bigyoutube{
+   position: absolute;
+  right: 0;
+  top: 34%;
 }
+  }
 .footer {
   position: absolute;
   display: flex;

@@ -1,7 +1,27 @@
 [
   {
-    "company": "<i>December 2018</i>  Aspirelabs  <b>Marketing Intern</b>",
+    "company": "<i>July 2018</i>  Tripping High - Founder, CTO>",
+  },
+  {
+    "company": "<i>December 2018- January 2020</i>  Aspirelabs(Polypex)  <b>Digital Manager</b>",
     "projects":[
+      {
+        "description":"Planning and Stratergizing",
+        "name":"Reimagine Plastic",
+        "skills":[
+          "Social media management",
+          "Website and program design",
+          "Logo Design"
+        ]
+      },
+      {
+        "description":"Team Management anf mentoring interns",
+        "name":"Team Management",
+        "skills":[
+          "Mentoring",
+          "Task delegation and management",
+        ]
+      },
       {
         "description":"Program Facilation",
         "name":"CleanEdge Accelerator",
