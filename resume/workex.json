@@ -1,303 +1,341 @@
-[
-  {
-    "company": "<i>July 2018</i>  Tripping High - Founder, CTO>"
-  },
-  {
-    "company": "<i>December 2018- January 2020</i>  Aspirelabs(Polypex)  <b>Digital Manager</b>",
-    "projects":[
-      {
-        "description":"Planning and Stratergizing",
-        "name":"Reimagine Plastic",
-        "skills":[
-          "Social media management",
-          "Website and program design",
-          "Logo Design"
-        ]
-      },
-      {
-        "description":"Team Management anf mentoring interns",
-        "name":"Team Management",
-        "skills":[
-          "Mentoring",
-          "Task delegation and management"
-        ]
-      },
-      {
-        "description":"Program Facilation",
-        "name":"CleanEdge Accelerator",
-        "skills":[
-          "Helping out startups, and managing Mentor-Startup Sessions",
-          "Being SPOC for program and startups and Mentors",
-          "Organizing contact sessions"
-        ]
-      },
-      {
-        "description":"Managing Social Media accounts for various verticles of the company",
-        "name":"Social Media Management",
-        "skills":[
-          "social media posts",
-          "ideating the calender",
-          "being SPOC for varous agencies"
-        ]
-      },
-      {
-      "description":"Designing various posts, graphics, wireframes",
-      "name":"Designing",
-      "skills":[
-        "wireframes",
-        "GIMP 2.0",
-        "Inkscape",
-        "Others:Team Management"
-      ]
-    
-    }]
-  },
- {
-    "company": "<i>March 2016- May 2017</i>  Lyxel Labs Pvt Ltd  <b>Sr. Frontend Developer</b>",
-    "projects": [
-      {
-        "description": "dashboard to present graphs  for progress from various portals like adwords, analytics, facebook etc",
-        "name": "Weavr",
-        "skills": [
-          "frontend: Front-end",
-          "Vue",
-          "Vue2",
-          "chart js",
-          "backend: apis",
-          "tornado"
-        ]
-      },
-      {
-        "description": "Mail server Front end",
-        "name": "Mail server",
-        "skills": [
-          "frontend: Front-end",
-          "Semantic UI",
-          "angular JS"
-        ]
-      }
-    ]
-  },
-  {
-    "company": "<i>September 2015 - Feb 2016</i>  Zimply <b>Sr Frontend Developer</b> ",
-    "projects": [
-      {
-        "description": "Mobile Website",
-        "name": "Mobile Website",
-        "skills": [
-          "frontend: Front-end",
-          "Node",
-          "Express",
-          "Jade"
-        ]
-      },
-      {
-        "description": "Internal dashboard for Courier system",
-        "name": "Internal Dashboard",
-        "skills": [
-          "frontend: Front-end",
-          "Semantic UI",
-          "Ember JS",
-          "CoffeeScript"
-        ]
-      },
-      {
-        "name": "Seller Dashboard",
-        "skills": [
-          "frontend: Front-end",
-          "Knockout JS",
-          "Semantic UI",
-          "CoffeeScript"
-        ]
-      },
-      {
-        "description": "Zimply Website\n Shop , Cart and payment integration,\n Responsive for all device types.<br/>",
-        "name": "Zimply Website",
-        "skills": [
-          "frontend: Front-end",
-          "HTML/CSS"
-        ]
-      }
-    ]
-  },
-  {
-    "company": "<i>Jan 2013- Aug 2015</i> Zopper <b>Software Programmer</b> ",
-    "projects": [
-      {
-        "description": "Main zopper.com website. <br/>Responsive for all device types.<br/>Pingdom score: 90+<br/>Team size: 2+",
-        "name": "Zopper Website ",
-        "skills": [
-          "frontend: Front-end",
-          "HTML/CSS",
-          "Responsive",
-          "JQuery",
-          "others:Team management"
-        ]
-      },
-      {
-        "description": "Internal dashboard for managing supply chain system<br/>\n          Responsive for all device types.<br/>\n          Team size: 3+",
-        "name": "Unified Dashboard ",
-        "skills": [
-          "frontend: Front-end",
-          "Semantic UI",
-          "Responsive",
-          "Angular JS"
-        ]
-      },
-      {
-        "name": "Rocket- Inventory Dashboard",
-        "skills": [
-          "frontend: Front-end",
-          "Angular JS",
-          "Semantic UI"
-        ]
-      },
-      {
-        "description": "Single-Handedly responsible for the entire mobile site.<br/>\n          Consuming external APIs using Tornado.\n          Revamping the website",
-        "name": "Mobile Site ",
-        "skills": [
-          "frontend: Front-end",
-          "HTML CSS",
-          "Jquery",
-          "Jinja/ Jinja2",
-          "backend:backend",
-          "tornado",
-          "others:ansible"
-        ]
-      },
-      {
-        "description": "Consuming elastic APIs to provide interface for healthy competition between online markets.",
-        "name": "Profit",
-        "skills": [
-          "frontend: Front-end",
-          "Bootstap",
-          "Angular JS"
-        ]
-      },
-      {
-        "description": "Portal for the retailers <br/>Syncing with the main website<br/>Integration with OLX/Quickr knowlarity.",
-        "name": "RISE",
-        "skills": [
-          "backend:Backend",
-          "Python /Django",
-          "frontend:Frontend",
-          "Javascript/ JQuery"
-        ]
-      },
-      {
-        "description": "APIs for the  website. <br/>Front end improvements<br/>",
-        "name": "Web and Mobile Site ",
-        "skills": [
-          "backend:Backend",
-          "Python /Django",
-          "frontend:Frontend",
-          "Javascript/ JQuery"
-        ]
-      },
-      {
-        "description": "App.zopper.com. Implementing basic paralax using pure javascript",
-        "name": "<a href ='https://web.archive.org/web/20140726195843/http://app.zopper.com/' target='_blank'>App Landing page </a>",
-        "skills": [
-          "frontend:Frontend",
-          "HTML",
-          "CSS",
-          "paralax",
-          "javascript"
-        ]
-      }
-    ]
-  },
-  {
-    "company": "<i>Jan 2012-June 2012</i>  Rhythm and Hues Studios <b>MIS Intern</b>",
-    "projects": [
-      {
-        "description": "Add remove update inventory.",
-        "name": "Inventory dashboard",
-        "skills": [
-          "CGI/Perl",
-          "PHP",
-          "Ajax"
-        ]
-      },
-      {
-        "description": "One dashboard to view Pie Charts",
-        "name": "Global Monitoring Dashboard",
-        "skills": [
-          "ExtJS",
-          "Python"
-        ]
-      },
-      {
-        "description": "Script in python to ping various location and email if there is a latency lag.",
-        "name": "Latency Scripts ",
-        "skills": [
-          "Python"
-        ]
-      }
-    ]
-  },
-  {
-    "company": "Personal Projects",
-    "projects": [
-      {
-        "description": "Website for CoCreateChange ",
-        "name": "CoCreateChange",
-        "skills": [
-          "jade",
-          "HTML",
-          "CoffeeScript",
-          "backend:Wintersmith"
-        ]
-      },
-      {
-        "description": "Website for innov8 ",
-        "name": "innov8",
-        "skills": [
-          "knockout",
-          "scss"
-        ]
-      },
-      {
-        "description": "Website for kadhai.com using wordpress oneengine theme ",
-        "name": "Kadhai",
-        "skills": [
-          "wordpress"
-        ]
-      }, 
-      {
-        "description": "Admin dashboard to send SMS to BSNL employees to notify them on reimbursements ",
-        "name": "Nachrict (BSNL)",
-        "skills": [
-          "backend:Backend",
-          "Python /Django",
-          "frontend:Frontend",
-          "Javascript",
-          "others:Mercurial",
-          "others:celery/RabbitMQ"
-        ]
-      },
-      {
-        "description": "Placement Portal for college. <br/>Students can enter details. View and apply for on campus placements.<br/>Admins could add new company, filter students and get aggregated data",
-        "name": "La-ResumeX",
-        "skills": [
-          "backend:Backend",
-          "Python /Django",
-          "frontend:Frontend",
-          "Javascript",
-          "others:Mercurial"
-        ]
-      },
-      {
-        "description": "Feedback management system for courses and teachers after every semester",
-        "name": "Change-Agent",
-        "skills": [
-          "backend:Back-end",
-          "Python /Django",
-          "frontend:Front-end",
-          "Javascript",
-          "others:Mercurial"
-        ]
-      }
-    ]
-  }
+[{
+		"company": "<i>Aug 2022, March 2023</i>  HACKATHON - Publicis Sapient>",
+		"projects": [{
+			"description": "waste collection and recycle system for employees",
+			"name": "ScrapBook",
+			"skills": [
+				"UX design",
+				"logo design and branding ",
+				"full UI development - node Express JS",
+				"brainstroming on idea",
+				"working under pressure"
+			]
+		}, {
+			"description": " Food nutirent based app",
+			"name": "Mealecule",
+			"skills": [
+				"UX design",
+				"logo design and branding ",
+				"full UI development - vuejs",
+				"brainstroming on idea"
+			]
+		}]
+	},
+	{
+		"company": "<i>June 2021</i>  Publicis Sapient>",
+		"projects": [{
+				"description": "website redesign",
+				"name": "Goodyear",
+				"skills": [
+					"making resuable componenents like flyouts",
+					"making page designer in SFCC",
+					"frontend"
+				]
+			},
+			{
+				"description": "UI design",
+				"name": "Goodyear",
+				"skills": [
+					"ui",
+					"vue js"
+				]
+			}
+		]
+	},
+	{
+		"company": "<i>July 2018</i>  Tripping High - Founder, CTO>"
+	},
+	{
+		"company": "<i>December 2018- January 2020</i>  Aspirelabs(Polypex)  <b>Digital Manager</b>",
+		"projects": [{
+				"description": "Planning and Stratergizing",
+				"name": "Reimagine Plastic",
+				"skills": [
+					"Social media management",
+					"Website and program design",
+					"Logo Design"
+				]
+			},
+			{
+				"description": "Team Management anf mentoring interns",
+				"name": "Team Management",
+				"skills": [
+					"Mentoring",
+					"Task delegation and management"
+				]
+			},
+			{
+				"description": "Program Facilation",
+				"name": "CleanEdge Accelerator",
+				"skills": [
+					"Helping out startups, and managing Mentor-Startup Sessions",
+					"Being SPOC for program and startups and Mentors",
+					"Organizing contact sessions"
+				]
+			},
+			{
+				"description": "Managing Social Media accounts for various verticles of the company",
+				"name": "Social Media Management",
+				"skills": [
+					"social media posts",
+					"ideating the calender",
+					"being SPOC for varous agencies"
+				]
+			},
+			{
+				"description": "Designing various posts, graphics, wireframes",
+				"name": "Designing",
+				"skills": [
+					"wireframes",
+					"GIMP 2.0",
+					"Inkscape",
+					"Others:Team Management"
+				]
+
+			}
+		]
+	},
+	{
+		"company": "<i>March 2016- May 2017</i>  Lyxel Labs Pvt Ltd  <b>Sr. Frontend Developer</b>",
+		"projects": [{
+				"description": "dashboard to present graphs  for progress from various portals like adwords, analytics, facebook etc",
+				"name": "Weavr",
+				"skills": [
+					"frontend: Front-end",
+					"Vue",
+					"Vue2",
+					"chart js",
+					"backend: apis",
+					"tornado"
+				]
+			},
+			{
+				"description": "Mail server Front end",
+				"name": "Mail server",
+				"skills": [
+					"frontend: Front-end",
+					"Semantic UI",
+					"angular JS"
+				]
+			}
+		]
+	},
+	{
+		"company": "<i>September 2015 - Feb 2016</i>  Zimply <b>Sr Frontend Developer</b> ",
+		"projects": [{
+				"description": "Mobile Website",
+				"name": "Mobile Website",
+				"skills": [
+					"frontend: Front-end",
+					"Node",
+					"Express",
+					"Jade"
+				]
+			},
+			{
+				"description": "Internal dashboard for Courier system",
+				"name": "Internal Dashboard",
+				"skills": [
+					"frontend: Front-end",
+					"Semantic UI",
+					"Ember JS",
+					"CoffeeScript"
+				]
+			},
+			{
+				"name": "Seller Dashboard",
+				"skills": [
+					"frontend: Front-end",
+					"Knockout JS",
+					"Semantic UI",
+					"CoffeeScript"
+				]
+			},
+			{
+				"description": "Zimply Website\n Shop , Cart and payment integration,\n Responsive for all device types.<br/>",
+				"name": "Zimply Website",
+				"skills": [
+					"frontend: Front-end",
+					"HTML/CSS"
+				]
+			}
+		]
+	},
+	{
+		"company": "<i>Jan 2013- Aug 2015</i> Zopper <b>Software Programmer</b> ",
+		"projects": [{
+				"description": "Main zopper.com website. <br/>Responsive for all device types.<br/>Pingdom score: 90+<br/>Team size: 2+",
+				"name": "Zopper Website ",
+				"skills": [
+					"frontend: Front-end",
+					"HTML/CSS",
+					"Responsive",
+					"JQuery",
+					"others:Team management"
+				]
+			},
+			{
+				"description": "Internal dashboard for managing supply chain system<br/>\n          Responsive for all device types.<br/>\n          Team size: 3+",
+				"name": "Unified Dashboard ",
+				"skills": [
+					"frontend: Front-end",
+					"Semantic UI",
+					"Responsive",
+					"Angular JS"
+				]
+			},
+			{
+				"name": "Rocket- Inventory Dashboard",
+				"skills": [
+					"frontend: Front-end",
+					"Angular JS",
+					"Semantic UI"
+				]
+			},
+			{
+				"description": "Single-Handedly responsible for the entire mobile site.<br/>\n          Consuming external APIs using Tornado.\n          Revamping the website",
+				"name": "Mobile Site ",
+				"skills": [
+					"frontend: Front-end",
+					"HTML CSS",
+					"Jquery",
+					"Jinja/ Jinja2",
+					"backend:backend",
+					"tornado",
+					"others:ansible"
+				]
+			},
+			{
+				"description": "Consuming elastic APIs to provide interface for healthy competition between online markets.",
+				"name": "Profit",
+				"skills": [
+					"frontend: Front-end",
+					"Bootstap",
+					"Angular JS"
+				]
+			},
+			{
+				"description": "Portal for the retailers <br/>Syncing with the main website<br/>Integration with OLX/Quickr knowlarity.",
+				"name": "RISE",
+				"skills": [
+					"backend:Backend",
+					"Python /Django",
+					"frontend:Frontend",
+					"Javascript/ JQuery"
+				]
+			},
+			{
+				"description": "APIs for the  website. <br/>Front end improvements<br/>",
+				"name": "Web and Mobile Site ",
+				"skills": [
+					"backend:Backend",
+					"Python /Django",
+					"frontend:Frontend",
+					"Javascript/ JQuery"
+				]
+			},
+			{
+				"description": "App.zopper.com. Implementing basic paralax using pure javascript",
+				"name": "<a href ='https://web.archive.org/web/20140726195843/http://app.zopper.com/' target='_blank'>App Landing page </a>",
+				"skills": [
+					"frontend:Frontend",
+					"HTML",
+					"CSS",
+					"paralax",
+					"javascript"
+				]
+			}
+		]
+	},
+	{
+		"company": "<i>Jan 2012-June 2012</i>  Rhythm and Hues Studios <b>MIS Intern</b>",
+		"projects": [{
+				"description": "Add remove update inventory.",
+				"name": "Inventory dashboard",
+				"skills": [
+					"CGI/Perl",
+					"PHP",
+					"Ajax"
+				]
+			},
+			{
+				"description": "One dashboard to view Pie Charts",
+				"name": "Global Monitoring Dashboard",
+				"skills": [
+					"ExtJS",
+					"Python"
+				]
+			},
+			{
+				"description": "Script in python to ping various location and email if there is a latency lag.",
+				"name": "Latency Scripts ",
+				"skills": [
+					"Python"
+				]
+			}
+		]
+	},
+	{
+		"company": "Personal Projects",
+		"projects": [{
+				"description": "Website for CoCreateChange ",
+				"name": "CoCreateChange",
+				"skills": [
+					"jade",
+					"HTML",
+					"CoffeeScript",
+					"backend:Wintersmith"
+				]
+			},
+			{
+				"description": "Website for innov8 ",
+				"name": "innov8",
+				"skills": [
+					"knockout",
+					"scss"
+				]
+			},
+			{
+				"description": "Website for kadhai.com using wordpress oneengine theme ",
+				"name": "Kadhai",
+				"skills": [
+					"wordpress"
+				]
+			},
+			{
+				"description": "Admin dashboard to send SMS to BSNL employees to notify them on reimbursements ",
+				"name": "Nachrict (BSNL)",
+				"skills": [
+					"backend:Backend",
+					"Python /Django",
+					"frontend:Frontend",
+					"Javascript",
+					"others:Mercurial",
+					"others:celery/RabbitMQ"
+				]
+			},
+			{
+				"description": "Placement Portal for college. <br/>Students can enter details. View and apply for on campus placements.<br/>Admins could add new company, filter students and get aggregated data",
+				"name": "La-ResumeX",
+				"skills": [
+					"backend:Backend",
+					"Python /Django",
+					"frontend:Frontend",
+					"Javascript",
+					"others:Mercurial"
+				]
+			},
+			{
+				"description": "Feedback management system for courses and teachers after every semester",
+				"name": "Change-Agent",
+				"skills": [
+					"backend:Back-end",
+					"Python /Django",
+					"frontend:Front-end",
+					"Javascript",
+					"others:Mercurial"
+				]
+			}
+		]
+	}
 ]
