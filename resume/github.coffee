@@ -38,64 +38,76 @@ for item in menuitems
 
 fillskills = ->
   SKILLS = [
+
+    # Frontend
     {
-      skill:'HTML',
+      skill:'HTML5',
+      value:10,
+      stack:'frontend'
+    },
+    {
+      skill:'CSS3',
+      value:10,
+      stack:'frontend'
+    },
+    {
+      skill:'JavaScript',
+      value:10,
+      stack:'frontend'
+    },
+    {
+      skill:'SCSS',
+      value:10,
+      stack:'frontend'
+    },
+    {
+      skill:'Vue.js',
       value:9,
       stack:'frontend'
     },
     {
-      skill:'CSS',
+      skill:'React',
+      value:3,
+      stack:'frontend'
+    },
+    {
+      skill:'jQuery',
       value:9,
       stack:'frontend'
     },
     {
-      skill:'Semantic UI',
-      value:6,
-      stack:'frontend'
-    },
-    {
-      skill:'Javascript',
+      skill:'Handlebars',
       value:7,
       stack:'frontend'
     },
     {
-      skill:'JQuery',
-      value:8,
-      stack:'frontend'
-    },
-    {
-      skill:'Vue JS',
-      value:6,
-      stack:'frontend'
-    },
-    {
-      skill:'Chart JS',
-      value:5,
-      stack:'frontend'
-    },  
-    {
-      skill:'Angular JS',
-      value:6,
-      stack:'frontend'
-    },
-    {
-      skill:'Ember JS',
+      skill:'Storybook',
       value:2,
       stack:'frontend'
     },
     {
-      skill:'Express/Node',
-      value:2,
-      stack:'frontend'
-    },
-    {
-      skill:'Knockout JS',
+      skill:'AngularJS',
       value:4,
       stack:'frontend'
     },
     {
-      skill:'stylus/scss/less',
+      skill:'Knockout.js',
+      value:5,
+      stack:'frontend'
+    },
+    {
+      skill:'Ember.js',
       value:3,
+      stack:'frontend'
+    },
+    {
+      skill:'Semantic UI',
+      value:8,
+      stack:'frontend'
+    },
+    {
+      skill:'Chart.js',
+      value:6,
       stack:'frontend'
     },
     {
@@ -103,41 +115,71 @@ fillskills = ->
       value:5,
       stack:'frontend'
     },
-  {
+
+    # Backend
+    {
+      skill:'Python',
+      value:7,
+      stack:'backend'
+    },
+    {
       skill:'Django',
       value:7,
       stack:'backend'
     },
     {
-      skill:'Python',
+      skill:'Flask',
+      value:5,
+      stack:'backend'
+    },
+    {
+      skill:'Tornado',
+      value:5,
+      stack:'backend'
+    },
+    {
+      skill:'Node.js',
       value:6,
       stack:'backend'
     },
     {
-      skill:' tornado',
-      value:4,
-      stack:'backend'
-    },
-    {
-      skill:'flask',
+      skill:'Express.js',
       value:3,
       stack:'backend'
     },
     {
-      skill:'GIT',
-      value:2,
+      skill:'REST APIs',
+      value:8,
+      stack:'backend'
+    },
+
+    # Others
+    {
+      skill:'Git',
+      value:9,
       stack:'others'
     },
     {
-      skill:'nginx',
-      value:1,
+      skill:'Jenkins',
+      value:2,
+      stack:'others'
+    },
+   
+    {
+      skill:'Figma',
+      value:4,
+      stack:'others'
+    },
+    {
+      skill:'Adobe XD',
+      value:4,
       stack:'others'
     },
     {
       skill:'Linux',
-      value:3,
+      value:5,
       stack:'others'
-    },
+    }
   ]
   ul = get('#skillSet')
   for skill in SKILLS
